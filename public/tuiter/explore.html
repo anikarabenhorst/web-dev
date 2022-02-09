@@ -4,64 +4,74 @@
 	<meta charset="UTF-8">
 	<title>Explore</title>
 	<link href="./explore.css" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/685c11a071.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="wd-explore-header">
-	<div class="wd- search-bar">
-		<!-- search icon -->
-		<input class="rounded-corners-all-around no-border bg-color-gray padding full-width"
-		       id="search-twitter"
-		       placeholder="Search Twitter"/>
-	</div>
-	<a href="explore-settings.html">
-		<!-- cog icon -->
+	<input class="wd-search-bar"
+	       id="search-tuiter"
+	       placeholder="Search Tuiter"/>
+	<a class="wd-gear" href="explore-settings.html">
+		<i class="fa-solid fa-gear"></i>
 	</a>
 </div>
+</br>
 <div class="wd-explore-hyperlink-tabs">
-	<ul>
-		<li><a href="#" class="wd-selected-link">For You</a></li>
-		<li><a href="#" class="wd-not-selected-link">Trending</a></li>
-		<li><a href="#" class="wd-not-selected-link">COVID-19</a></li>
-		<li><a href="#" class="wd-not-selected-link">News</a></li>
-		<li><a href="#" class="wd-not-selected-link">Sports</a></li>
-		<li><a href="#" class="wd-not-selected-link">Entertainment</a></li>
-	</ul>
+	<a href="#" class="wd-explore-tab-active">For You</a>
+	<a href="#">Trending</a>
+	<a href="#">COVID-19</a>
+	<a href="#">News</a>
+	<a href="#">Sports</a>
+	<a href="#">Entertainment</a>
 </div>
+</br>
 <div class="wd-suggested-posts">
 	<div class="wd-post">
-		<p class="wd-subtext">Broadway · Trending</p>
-		<p class="wd-title">West Side Story</p>
-		<p class="wd-subtext">123.4K Tweets</p>
+		<div class="wd-post-text">
+			<p class="wd-subtext">Broadway · Trending</p>
+			<p class="wd-title">West Side Story</p>
+			<p class="wd-subtext">123.4K Tweets</p>
+		</div>
+
 	</div>
 	<div class="wd-post">
-		<p class="wd-subtext">Trending in Massachusetts</p>
-		<p class="wd-title">Beanpot 2022</p>
-		<p class="wd-subtext">7861 Tweets</p>
+		<div>
+			<p class="wd-subtext">Trending in Massachusetts</p>
+			<p class="wd-title">Beanpot 2022</p>
+			<p class="wd-subtext">7861 Tweets</p>
+		</div>
 	</div>
 	<div class="wd-post">
-		<p class="wd-author">The New York Times</p>
-		<!-- verified icon -->
-		<p class="wd-subtext">· Yesterday</p>
-		<p class="wd-title">Olympics Updates: Mikaela Shiffrin Is Disqualified in a Second Race</p>
+		<div>
+			<p class="wd-author">The New York Times</p>
+			<!-- verified icon -->
+			<p class="wd-subtext">· Yesterday</p>
+			<p class="wd-title">Olympics Updates: Mikaela Shiffrin Is Disqualified in a Second Race</p>
+		</div>
 		<img src="images/Mikaela.JPG" class="wd-post-image"/>
 	</div>
 	<div class="wd-post">
-		<p class="wd-author">Reductress</p>
-		<!-- verified icon -->
-		<p class="wd-subtext">· Yesterday</p>
-		<p class="wd-title">Woman Treats Herself to a Little Road Rage</p>
+		<div>
+			<p class="wd-author">Reductress</p>
+			<!-- verified icon -->
+			<p class="wd-subtext">· Yesterday</p>
+			<p class="wd-title">Woman Treats Herself to a Little Road Rage</p>
+		</div>
 		<img src="images/road-rage.jpeg" class="wd-post-image"/>
 	</div>
 	<div class="wd-post">
-		<p class="wd-subtext">COVID-19 · LIVE</p>
-		<p class="wd-title">COVID-19: News and updates for Massachusetts</p>
+		<div>
+			<p class="wd-subtext">COVID-19 · LIVE</p>
+			<p class="wd-title">COVID-19: News and updates for Massachusetts</p>
+		</div>
 		<img src="images/healthy-ma.jpeg" class="wd-post-image"/>
 	</div>
 	<div class="wd-post">
-		<p class="wd-subtext">Reality TV · 4hr</p>
-		<p class="wd-title">Survivor Australia Season Premiere</p>
-		<img src="images/healthy-ma.jpeg" class="wd-post-image"/>
-		<!-- change img -->
+		<div>
+			<p class="wd-subtext">Reality TV · 4hr</p>
+			<p class="wd-title">Survivor Australia Season Premiere</p>
+		</div>
+		<img src="images/BvW.png" class="wd-post-image"/>
 	</div>
 </div>
 </body>
