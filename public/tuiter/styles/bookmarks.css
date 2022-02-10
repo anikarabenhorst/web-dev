@@ -40,7 +40,10 @@ body {
     height: 48px;
     margin-right: 12px;
 }
-
+.wd-tuit-content {
+    width: 100%;
+    max-width: 506px;
+}
 .wd-user p {
     display: inline;
     margin: 0px;
