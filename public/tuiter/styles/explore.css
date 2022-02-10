@@ -34,7 +34,8 @@ body {
     padding: 16px;
     border-bottom: 8px solid rgb(47, 51, 54);
 }
-.wd-explore-hyperlink-tabs a{
+
+.wd-explore-hyperlink-tabs a {
     color: rgb(110, 118, 125);
     margin: 16px;
     font-size: 15px;
@@ -70,9 +71,10 @@ body {
     color: white;
     font-size: 13px;
     font-weight: bold;
-    float:left;
+    float: left;
     padding-right: 4px;
 }
+
 .wd-subtext {
     color: rgb(110, 118, 125);
     font-size: 13px;

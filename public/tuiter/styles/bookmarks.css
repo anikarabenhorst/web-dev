@@ -26,6 +26,7 @@ body {
     font-size: 13px;
     margin-bottom: 12px;
 }
+
 .wd-tuit {
     padding-left: 16px;
     padding-top: 12px;
@@ -33,23 +34,25 @@ body {
     border-bottom: 1px solid lightgray;
 }
 
-.wd-user-image img{
+.wd-user-image img {
     border-radius: 50%;
     width: 48px;
     height: 48px;
     margin-right: 12px;
 }
 
-.wd-user p{
+.wd-user p {
     display: inline;
     margin: 0px;
 }
+
 .wd-important-type {
     font-size: 15px;
     color: white;
     font-weight: bold;
     margin-right: 2px;
 }
+
 .wd-other-type {
     font-size: 15px;
     color: lightgray;
@@ -67,6 +70,7 @@ body {
     padding: 12px;
     margin: 0px;
 }
+
 .wd-link-thumbnail {
     max-width: 504px;
     border-radius: 16px;
