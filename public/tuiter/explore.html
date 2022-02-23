@@ -3,75 +3,290 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Explore</title>
-	<link href="styles/explore.css" rel="stylesheet"/>
-	<script src="https://kit.fontawesome.com/685c11a071.js" crossorigin="anonymous"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="wd-explore-header">
-	<input class="wd-search-bar"
-	       id="search-tuiter"
-	       placeholder="Search Tuiter"/>
-	<a class="wd-gear" href="explore-settings.html">
-		<i class="fa-solid fa-gear"></i>
-	</a>
-</div>
-</br>
-<div class="wd-explore-hyperlink-tabs">
-	<a href="#" class="wd-explore-tab-active">For You</a>
-	<a href="#">Trending</a>
-	<a href="#">COVID-19</a>
-	<a href="#">News</a>
-	<a href="#">Sports</a>
-	<a href="#">Entertainment</a>
-</div>
-</br>
-<div class="wd-suggested-posts">
-	<div class="wd-post">
-		<div class="wd-post-text">
-			<p class="wd-subtext">Broadway · Trending</p>
-			<p class="wd-title">West Side Story</p>
-			<p class="wd-subtext">123.4K Tweets</p>
+<div class="container m-2">
+	<div class="row">
+		<div class="col-2 col-lg-1 col-xl-2">
+			<div class="list-group mb-2">
+				<li class="list-group-item list-group-item-action">
+					<i class="fa-brands fa-twitter"></i>
+				</li>
+				<a href="home.html" class="d-flex list-group-item list-group-item-action">
+					<i class="fa-solid fa-house-chimney"></i>
+					<span class="d-none d-xl-block ms-1"> Home</span>
+				</a>
+				<a href="explore.html" class="d-flex list-group-item list-group-item-action active"
+				   aria-current="true">
+					<i class="fa-solid fa-hashtag"></i>
+					<span class="d-none d-xl-block ms-1"> Explore</span>
+
+
+				</a>
+				<a href="notifications.html" class="d-flex list-group-item list-group-item-action">
+					<i class="fa-solid fa-bell"></i>
+					<span class="d-none d-xl-block ms-1"> Notifications</span>
+
+				</a>
+				<a href="messages.html" class="d-flex list-group-item list-group-item-action">
+					<i class="fa-solid fa-envelope"></i>
+					<span class="d-none d-xl-block ms-1"> Messages</span>
+				</a>
+				<a href="bookmarks.html" class="d-flex list-group-item list-group-item-action">
+					<i class="fa-solid fa-bookmark"></i>
+					<span class="d-none d-xl-block ms-1"> Bookmarks</span>
+
+				</a>
+				<a href="lists.html" class="d-flex list-group-item list-group-item-action">
+					<i class="fa-solid fa-list"></i>
+					<span class="d-none d-xl-block ms-1"> Lists</span>
+
+				</a>
+				<a href="profile.html.html" class="d-flex list-group-item list-group-item-action">
+					<i class="fa-solid fa-user"></i>
+					<span class="d-none d-xl-block ms-1"> Profile</span>
+
+				</a>
+				<a href="more.html" class="d-flex list-group-item list-group-item-action">
+					<span class="fa-stack">
+						<i class="fa-solid fa-circle fa-stack-1x"></i>
+						<i class="fa-solid fa-ellipsis fa-inverse fa-stack-1x"></i>
+					</span>
+					<span class="d-none d-xl-block ms-1"> More</span>
+				</a>
+			</div>
+			<button class="btn btn-primary btn-block m-auto rounded-pill" style="min-width:100%;">Tweet</button>
 		</div>
 
-	</div>
-	<div class="wd-post">
-		<div>
-			<p class="wd-subtext">Trending in Massachusetts</p>
-			<p class="wd-title">Beanpot 2022</p>
-			<p class="wd-subtext">7861 Tweets</p>
+		<div class="col-10 col-lg-7 col-xl-6">
+			<div class="d-flex justify-content-between align-items-center mb-2">
+				<div class="form px-1 me-2" style="width:100%;">
+					<input type="text" class="form-control form-input rounded-pill"
+					       style="font-family:Arial, FontAwesome" placeholder="&#xf002;   Search Twitter">
+				</div>
+				<i class="fas fa-cog fa-2x" style="color: rgb(29, 161, 242);"></i>
+			</div>
+
+			<ul class="nav nav-tabs mb-2">
+				<li class="nav-item">
+					<a class="nav-link active" href="for-you.html">For You</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="trending.html">Trending</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="news.html">News</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sports.html">Sports</a>
+				</li>
+				<li class="nav-item d-none d-md-block">
+					<a class="nav-link" href="entertainment.html">Entertainment</a>
+				</li>
+			</ul>
+
+			<div class="img-container position-relative">
+				<img style="width: 100%;" src="images/spacex.jpeg">
+				<div class="position-absolute bottom-0 start-0 ps-2">
+					<p style="margin:0; font-size: 35px; font-weight: bold; color: white;">
+						SpaceX's Starship</p>
+				</div>
+			</div>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<div class="row">
+						<div class="col-10">
+							<p style="margin:0; color: dimgray;">
+								Web Development</p>
+							<p style="display: inline; font-weight: bold;">
+								ReactJS</p>
+							<i style="display: inline;" class="fa-solid fa-check-circle"></i>
+							<p style="display: inline; margin:0; color: dimgray;">
+								• 2h</p>
+							<p style="font-weight: bold; margin:0;">
+								React.js is a component based front end library that makes it very easy to build Single Page
+								Applications or SPAs</p>
+						</div>
+						<div class="col-2">
+							<img class="img img-responsive full-width" style="width: 100%; border-radius: 12px;"
+							     src="images/reactjs.png"
+							     alt="React Logo">
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item">
+					<div class="row">
+						<div class="col-10">
+							<p style="display: inline; font-weight: bold;">
+								JavaScript</p>
+							<i style="display: inline;" class="fa-solid fa-check-circle"></i>
+							<p style="display: inline; margin:0; color: dimgray;">
+								• 2h</p>
+							<p style="font-weight: bold; margin:0;">
+								JavaScript is a programming language that can run on browsers as well as desktops</p>
+							<p style="margin:0; color: dimgray;">
+								123K Tweets</p>
+						</div>
+						<div class="col-2">
+							<img class="img img-responsive full-width" style="width: 100%; border-radius: 12px;" src="images/js.png"
+							     alt="JS Logo">
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item">
+					<div class="row">
+						<div class="col-10">
+							<p style="margin:0; color: dimgray;">
+								Web Development</p>
+							<p style="font-weight: bold; margin:0;">
+								jQuery</p>
+							<p style="margin:0; color: dimgray;">
+								123K Tweets</p>
+						</div>
+						<div class="col-2">
+							<img class="img img-responsive full-width" style="width: 100%; border-radius: 12px;"
+							     src="images/jquery.png"
+							     alt="jQuery Logo">
+						</div>
+					</div>
+				</li>
+				<li class="list-group-item">
+					<div class="row">
+						<div class="col-10">
+							<p style="margin:0; color: dimgray;">
+								Web Development</p>
+							<p style="display: inline; font-weight: bold;">
+								NodeJS</p>
+							<i style="display: inline;" class="fa-solid fa-check-circle"></i>
+							<p style="display: inline; margin:0; color: dimgray;">
+								• 2h</p>
+							<p style="margin:0; color: dimgray;">
+								123K Tweets</p>
+						</div>
+						<div class="col-2">
+							<img class="img img-responsive full-width" style="width: 100%; border-radius: 12px;"
+							     src="images/nodejs.png"
+							     alt="NodeJS Logo">
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
-	</div>
-	<div class="wd-post">
-		<div>
-			<p class="wd-author">The New York Times</p>
-			<!-- verified icon -->
-			<p class="wd-subtext">· Yesterday</p>
-			<p class="wd-title">Olympics Updates: Mikaela Shiffrin Is Disqualified in a Second Race</p>
+
+		<div class="col-lg-4 d-none d-lg-block">
+			<ul class="list-group">
+				<li class="list-group-item">
+					Who to Follow
+				</li>
+				<li class="list-group-item">
+					<div class="d-flex justify-content-between">
+						<div class="col-2">
+							<img class="img img-responsive" style="width: 100%; border-radius: 50%;"
+							     src="images/java.jpeg"
+							     alt="Java Logo">
+						</div>
+						<div class="col-7 ps-0 pe-0 mb-0 position-relative">
+							<p style="white-space: nowrap; font-weight: bold; z-index: 2;">
+								Java <span><i class="fa-solid fa-check-circle"></i></span></p>
+							<p class="pt-0 mt-0">
+								@Java</p>
+						</div>
+						<div class="col-3">
+							<button style="border-radius: 24px;" class="btn btn-primary">
+								Follow
+							</button>
+						</div>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<div class="d-flex justify-content-between">
+						<div class="col-2">
+							<img class="img img-responsive" style="width: 100%; border-radius: 50%;"
+							     src="images/relativityspace.jpeg"
+							     alt="Relativity Space Logo">
+						</div>
+						<div class="col-7 ps-0 pe-0 position-relative">
+							<p style="white-space: nowrap; font-weight: bold; z-index: 2;">
+								Relativity Space <span><i class="fa-solid fa-check-circle"></i></span></p>
+							<p style="margin:0;">
+								@relativityspace</p>
+						</div>
+						<div class="col-3">
+							<button style="border-radius: 24px;" class="btn btn-primary">
+								Follow
+							</button>
+						</div>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<div class="d-flex justify-content-between">
+						<div class="col-2">
+							<img class="img img-responsive" style="width: 100%; border-radius: 50%;"
+							     src="images/virgingalactic.svg"
+							     alt="Virgin Galactic Logo">
+						</div>
+						<div class="col-7 ps-0 pe-0 position-relative">
+							<p style="white-space: nowrap; font-weight: bold; z-index: 2;">
+								Virgin Galactic <span><i class="fa-solid fa-check-circle"></i></span></p>
+							<p style="margin:0;">
+								@virgingalactic</p>
+						</div>
+						<div class="col-3">
+							<button style="border-radius: 24px;" class="btn btn-primary">
+								Follow
+							</button>
+						</div>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<div class="d-flex justify-content-between">
+						<div class="col-2">
+							<img class="img img-responsive" style="width: 100%; border-radius: 50%;"
+							     src="images/nasa.png"
+							     alt="Nasa Logo">
+						</div>
+						<div class="col-7 ps-0 pe-0 position-relative">
+							<p style="white-space: nowrap; font-weight: bold; z-index: 2;">
+								NASA <span><i class="fa-solid fa-check-circle"></i></span></p>
+							<p style="margin:0;">
+								@NASA</p>
+						</div>
+						<div class="col-3">
+							<button style="border-radius: 24px;" class="btn btn-primary">
+								Follow
+							</button>
+						</div>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<div class="d-flex justify-content-between">
+						<div class="col-2">
+							<img class="img img-responsive" style="width: 100%; border-radius: 50%;"
+							     src="images/tesla.jpeg"
+							     alt="Tesla Logo">
+						</div>
+						<div class="col-7 ps-0 pe-0 position-relative">
+							<p style="white-space: nowrap; font-weight: bold; z-index: 2;">
+								Tesla <span><i class="fa-solid fa-check-circle"></i></span></p>
+							<p style="margin:0;">
+								@Tesla</p>
+						</div>
+						<div class="col-3 pe-2">
+							<button style="border-radius: 24px;" class="btn btn-primary">
+								Follow
+							</button>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
-		<img src="images/Mikaela.JPG" class="wd-post-image"/>
-	</div>
-	<div class="wd-post">
-		<div>
-			<p class="wd-author">Reductress</p>
-			<!-- verified icon -->
-			<p class="wd-subtext">· Yesterday</p>
-			<p class="wd-title">Woman Treats Herself to a Little Road Rage</p>
-		</div>
-		<img src="images/road-rage.jpeg" class="wd-post-image"/>
-	</div>
-	<div class="wd-post">
-		<div>
-			<p class="wd-subtext">COVID-19 · LIVE</p>
-			<p class="wd-title">COVID-19: News and updates for Massachusetts</p>
-		</div>
-		<img src="images/healthy-ma.jpeg" class="wd-post-image"/>
-	</div>
-	<div class="wd-post">
-		<div>
-			<p class="wd-subtext">Reality TV · 4hr</p>
-			<p class="wd-title">Survivor Australia Season Premiere</p>
-		</div>
-		<img src="images/BvW.png" class="wd-post-image"/>
 	</div>
 </div>
 </body>
