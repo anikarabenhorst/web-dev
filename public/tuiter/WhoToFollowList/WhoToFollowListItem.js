@@ -1,5 +1,5 @@
 const WhoToFollowListItem = (who) => {
-    return(`
+    return (`
         <li class="list-group-item">
            <div class="d-flex justify-content-between">
             <div class="col-2">

@@ -1,7 +1,7 @@
 import PostSummaryList from "../PostSummaryList";
 
 const ExploreComponent = () => {
-    return(`
+    return (`
         <div class="d-flex justify-content-between align-items-center mb-2">
             <div class="form px-1 me-2" style="width:100%;">
                 <input type="text" class="form-control form-input rounded-pill"

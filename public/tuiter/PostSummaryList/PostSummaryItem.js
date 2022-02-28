@@ -1,5 +1,5 @@
 const PostSummaryItem = (post) => {
-    return(`
+    return (`
         <li class="list-group-item">
             <div class="row">
                 <div class="col-10">
