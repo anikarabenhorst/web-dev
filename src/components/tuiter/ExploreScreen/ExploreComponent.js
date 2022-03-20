@@ -6,7 +6,7 @@ const ExploreComponent = () => {
             <div className="d-flex justify-content-between align-items-center mb-2">
                 <div className="input-group px-1 me-2">
                     <input type="text" className="form-control form-input rounded-pill input-group-lg"
-                           style={{fontFamily : "Arial, FontAwesome"}} placeholder="&#xf002;   Search Twitter"/>
+                           style={{fontFamily: "Arial, FontAwesome"}} placeholder="&#xf002;   Search Twitter"/>
                 </div>
                 <i className="fas fa-cog fa-2x" style={{color: "rgb(29, 161, 242)"}}></i>
             </div>
@@ -31,10 +31,10 @@ const ExploreComponent = () => {
 
             <div className="img-container position-relative">
                 <img width="100%" src="/tuiter/images/spacex.jpeg"/>
-                    <div className="position-absolute bottom-0 start-0 ps-2 m-0">
-                        <b style={{fontSize: "35px", color: "white"}}>
-                            SpaceX's Starship</b>
-                    </div>
+                <div className="position-absolute bottom-0 start-0 ps-2 m-0">
+                    <b style={{fontSize: "35px", color: "white"}}>
+                        SpaceX's Starship</b>
+                </div>
             </div>
             <PostSummaryList/>
         </>

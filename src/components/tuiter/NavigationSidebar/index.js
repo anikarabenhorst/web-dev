@@ -1,4 +1,5 @@
 import React from "react";
+
 const NavigationSidebar = ({active = 'explore'}) => {
     return (
         <div>
@@ -14,7 +15,8 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     <i className="fa-solid fa-hashtag"></i>
                     <span className="d-none d-xl-inline-block ms-1"> Explore</span>
                 </a>
-                <a href="notifications.html" className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
+                <a href="notifications.html"
+                   className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}>
                     <i className="fa-solid fa-bell"></i>
                     <span className="d-none d-xl-inline-block ms-1"> Notifications</span>
 

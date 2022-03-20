@@ -2,11 +2,11 @@ import React from "react";
 
 const WhoToFollowListItem = ({
                                  who = {
-                                        avatarIcon: '/tuiter/images/nasa.png',
-                                        userName: 'NASA',
-                                        handle: 'NASA',
-                                    }
-                                }
+                                     avatarIcon: '/tuiter/images/nasa.png',
+                                     userName: 'NASA',
+                                     handle: 'NASA',
+                                 }
+                             }
 ) => {
     return (
         <>
@@ -21,7 +21,7 @@ const WhoToFollowListItem = ({
                             <b className="flex-nowrap pe-1">{who.userName}</b>
                             <i className="fa-solid fa-circle-check"/>
                         </div>
-                        <p style={{margin:0}}>
+                        <p style={{margin: 0}}>
                             @{who.handle}</p>
                     </div>
                     <div className="col-3 pe-2">

@@ -1,19 +1,20 @@
 import React from "react";
+
 const PostSummaryItem = ({
-        post = {
-            "topic": "Web Development",
-            "userName": "ReactJS",
-            "time": "2h",
-            "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-            "image": "/tuiter/images/react-blue.png"
-        }
-    }) => {
+                             post = {
+                                 "topic": "Web Development",
+                                 "userName": "ReactJS",
+                                 "time": "2h",
+                                 "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+                                 "image": "/tuiter/images/react-blue.png"
+                             }
+                         }) => {
     return (
         <div className="card p-2">
             <div className="row">
                 <div className="col-10">
                     <div className="card-subtitle m-0" style={{color: "dimgray"}}>
-                    {post.topic}</div>
+                        {post.topic}</div>
                     <div className="card-text">
                         <b style={{color: "white"}}>{post.userName}</b>
                         <i className="fa-solid fa-check-circle" style={{color: "white"}}></i>

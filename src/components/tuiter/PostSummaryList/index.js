@@ -6,7 +6,7 @@ const PostSummaryList = () => {
     return (
         <ul class="list-group">
             {posts.map(post => {
-                return <PostSummaryItem post={post} />
+                return <PostSummaryItem post={post}/>
             })}
         </ul>
     );
