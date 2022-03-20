@@ -1,6 +1,6 @@
 import PostSummaryList from "../PostSummaryList/index.js";
 
-const ExploreComponent = () => {
+const ExploreComponent = ({active = 'for-you'}) => {
     return (
         <>
             <div className="d-flex justify-content-between align-items-center mb-2">
@@ -13,24 +13,24 @@ const ExploreComponent = () => {
 
             <ul className="nav nav-tabs mb-2">
                 <li className="nav-item">
-                    <a className="nav-link active" href="for-you.html">For You</a>
+                    <a className={`nav-link ${active === 'for-you' ? 'active' : ''}`} href="for-you.html">For You</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="trending.html">Trending</a>
+                    <a className={`nav-link ${active === 'trending' ? 'active' : ''}`} href="trending.html">Trending</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="news.html">News</a>
+                    <a className={`nav-link ${active === 'news' ? 'active' : ''}`} href="news.html">News</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="sports.html">Sports</a>
+                    <a className={`nav-link ${active === 'sports' ? 'active' : ''}`} href="sports.html">Sports</a>
                 </li>
                 <li className="nav-item d-none d-md-block">
-                    <a className="nav-link" href="entertainment.html">Entertainment</a>
+                    <a className={`nav-link ${active === 'entertainment' ? 'active' : ''}`} href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
 
             <div className="img-container position-relative">
-                <img width="100%" src="/tuiter/images/spacex.jpeg"/>
+                <img width="100%" src="/tuiter/images/spacex.jpeg" alt=""/>
                 <div className="position-absolute bottom-0 start-0 ps-2 m-0">
                     <b style={{fontSize: "35px", color: "white"}}>
                         SpaceX's Starship</b>
