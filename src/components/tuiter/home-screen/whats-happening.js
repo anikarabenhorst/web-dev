@@ -25,8 +25,8 @@ const WhatsHappening = () => {
                         onChange={(event) =>
                             setWhatsHappening(event.target.value)}>
                     </textarea>
-                    <hr/>
-                    <div>
+                    <hr className="m-2"/>
+                    <div >
                         <i className="mx-2 far fa-image wd-blue"></i>
                         <i className="mx-2 fas fa-chart-line wd-blue"></i>
                         <i className="mx-2 far fa-smile wd-blue"></i>
