@@ -22,11 +22,11 @@ const TuitStats = ({tuit}) => {
                     tuit.liked &&
                     <i className="fas fa-heart me-2" style={{color: 'red'}}></i>
                 }
-                {
-                    !tuit.liked &&
-                    <i className="far fa-heart me-2"></i>
-                }
-                {tuit.stats && tuit.stats.likes}
+                    {
+                        !tuit.liked &&
+                        <i className="far fa-heart me-2"></i>
+                    }
+                    {tuit.stats && tuit.stats.likes}
                 </span>
             </div>
             <div className="col">

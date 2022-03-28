@@ -7,7 +7,8 @@ const WhatsHappening = () => {
         = useState('');
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
-        dispatch({type: 'create-tuit',
+        dispatch({
+            type: 'create-tuit',
             tuit: whatsHappening
         });
     }
@@ -26,7 +27,7 @@ const WhatsHappening = () => {
                             setWhatsHappening(event.target.value)}>
                     </textarea>
                     <hr className="m-2"/>
-                    <div >
+                    <div>
                         <i className="mx-2 far fa-image wd-blue"></i>
                         <i className="mx-2 fas fa-chart-line wd-blue"></i>
                         <i className="mx-2 far fa-smile wd-blue"></i>

@@ -4,8 +4,8 @@ const tuitsReducer = (state = tuits, action) => {
     switch (action.type) {
         case 'like-tuit':
             return state.map(tuit => {
-                if(tuit._id === action.tuit._id) {
-                    if(tuit.liked === true) {
+                if (tuit._id === action.tuit._id) {
+                    if (tuit.liked === true) {
                         tuit.liked = false;
                         tuit.stats.likes--;
                     } else {
