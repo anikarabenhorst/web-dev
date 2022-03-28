@@ -26,6 +26,7 @@ function App() {
                                  element={<HomeScreen/>}/>
                           <Route path="explore"
                                  element={<ExploreScreen/>}/>
+                          {/*no NotificationScreen for undergrad*/}
                           {/*<Route path="notifications"*/}
                           {/*       element={<NotificationScreen/>}/>*/}
                       </Route>
