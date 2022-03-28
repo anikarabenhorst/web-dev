@@ -1,0 +1,11 @@
+textarea
+{
+    width: 100%;
+    background: black;
+    border: none;
+    color: white;
+}
+
+.wd-blue {
+    color: #0dcaf0;
+}
