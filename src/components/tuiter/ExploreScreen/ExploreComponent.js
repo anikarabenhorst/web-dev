@@ -25,7 +25,8 @@ const ExploreComponent = ({active = 'for-you'}) => {
                     <a className={`nav-link ${active === 'sports' ? 'active' : ''}`} href="sports.html">Sports</a>
                 </li>
                 <li className="nav-item d-none d-md-block">
-                    <a className={`nav-link ${active === 'entertainment' ? 'active' : ''}`} href="entertainment.html">Entertainment</a>
+                    <a className={`nav-link ${active === 'entertainment' ? 'active' : ''}`}
+                       href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
 

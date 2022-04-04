@@ -1,17 +1,18 @@
 import React from "react";
 
 const NavigationSidebar = ({active = 'explore'}) => {
+    active= window.location.pathname;
     return (
         <div>
             <div className="list-group">
                 <a className="list-group-item" href="/">
                     <i className="fa-brands fa-twitter"></i></a>
-                <a href="home.html"
-                   className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
+                <a href="/tuiter"
+                   className={`list-group-item ${active === '/tuiter' ? 'active' : ''}`}>
                     <i className="fa-solid fa-house-chimney"></i>
                     <span className="d-none d-xl-inline-block ms-1"> Home</span>
                 </a>
-                <a href="explore.html" className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
+                <a href="/tuiter/explore" className={`list-group-item ${active === '/tuiter/explore' ? 'active' : ''}`}>
                     <i className="fa-solid fa-hashtag"></i>
                     <span className="d-none d-xl-inline-block ms-1"> Explore</span>
                 </a>
