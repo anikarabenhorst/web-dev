@@ -1,17 +1,12 @@
 import React, {useState} from "react";
+import {createTuit} from '../../../actions/tuits-actions';
 import {useDispatch} from "react-redux";
 import './whats-happening.css';
 
 const WhatsHappening = () => {
-    let [whatsHappening, setWhatsHappening]
-        = useState('');
+    const [newTuit, setNewTuit] = useState({tuit: ""});
     const dispatch = useDispatch();
-    const tuitClickHandler = () => {
-        dispatch({
-            type: 'create-tuit',
-            tuit: whatsHappening
-        });
-    }
+
     return (
         <>
             <div className="row pb-2">
@@ -22,9 +17,10 @@ const WhatsHappening = () => {
                 <div className="col-10">
                     <textarea
                         placeholder="What's happening"
-                        value={whatsHappening}
-                        onChange={(event) =>
-                            setWhatsHappening(event.target.value)}>
+                        value={newTuit.tuit}
+                        onChange={(e) =>
+                            setNewTuit({...newTuit,
+                                tuit: e.target.value})}>
                     </textarea>
                     <hr className="m-2"/>
                     <div>
@@ -33,7 +29,7 @@ const WhatsHappening = () => {
                         <i className="mx-2 far fa-smile wd-blue"></i>
                         <i className="mx-2 far fa-calendar wd-blue"></i>
                         <button
-                            onClick={tuitClickHandler}
+                            onClick={() => createTuit(dispatch, newTuit)}
                             className="btn btn-primary float-end rounded-pill">
                             Tweet
                         </button>
