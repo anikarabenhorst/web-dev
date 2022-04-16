@@ -18,7 +18,11 @@ const TuitStats = ({tuit}) => {
                 <span onClick={() => updateTuit(dispatch, {
                     ...tuit,
                     liked: !tuit.liked,
-                    "stats.likes": tuit.liked ? tuit.stats.likes-- : tuit.stats.likes ++
+                    stats: {
+                        ...tuit.stats,
+                        likes: tuit.liked ? tuit.stats.likes-- : tuit.stats.likes ++
+                    }
+                    // "stats.likes": tuit.liked ? tuit.stats.likes-- : tuit.stats.likes ++
                 })}>
                     Likes: {tuit.stats && tuit.stats.likes}
                     {
@@ -35,7 +39,11 @@ const TuitStats = ({tuit}) => {
                 <span onClick={() => updateTuit(dispatch, {
                     ...tuit,
                     disliked: !tuit.disliked,
-                    "stats.dislikes": tuit.disliked ? tuit.stats.dislikes-- : tuit.stats.dislikes++
+                    stats: {
+                        ...tuit.stats,
+                        dislikes: tuit.disliked ? tuit.stats.dislikes-- : tuit.stats.dislikes++
+                    }
+                    // "stats.dislikes": tuit.disliked ? tuit.stats.dislikes-- : tuit.stats.dislikes++
                 })}>
                     Dislikes: {tuit.stats && tuit.stats.dislikes}
                     {
